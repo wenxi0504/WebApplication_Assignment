@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 import createError from 'http-errors';
-import app from './Server/Config/app';
+import app from './COnfig/app';
 import debug from 'debug';
 debug('comp229-m2021-assignment2-wenxu-301098127:server');
 import http from 'http';
