@@ -5,25 +5,25 @@ import express, { Request, Response, NextFunction } from 'express';
 
 export function DisplayHomePage(req: Request, res: Response, next: NextFunction): void
 {
-    res.render('home', { title: 'Home', page: 'home' });
+    res.render('index', { title: 'Home', page: 'home' });
 }
 
 export function DisplayAboutPage(req: Request, res: Response, next: NextFunction): void
 {
-    res.render('aboutme', { title: 'About Me', page: 'about me'  });
+    res.render('index', { title: 'About Me', page: 'about me'  });
 }
 
 export function DisplayProjectsPage(req: Request, res: Response, next: NextFunction): void
 {
-    res.render('projects', { title: 'Projects', page: 'projects'  });
+    res.render('index', { title: 'Projects', page: 'projects'  });
 }
 
 export function DisplayServicesPage(req: Request, res: Response, next: NextFunction): void
 {
-    res.render('services', { title: 'Services', page: 'services'  });
+    res.render('index', { title: 'Services', page: 'services'  });
 }
 
 export function DisplayContactPage(req: Request, res: Response, next: NextFunction): void
 {
-    res.render('contact', { title: 'Contact', page: 'contact'  });
+    res.render('index', { title: 'Contact', page: 'contact'  });
 }
