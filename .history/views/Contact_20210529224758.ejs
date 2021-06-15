@@ -1,0 +1,22 @@
+<%- include ('partials/header.ejs') %>
+
+<%- include ('partials/main_nav.ejs') %>
+
+<div class="container">
+  <h2 class="h2title">Contact me</h2>
+            <form action="index.html">
+                <fieldset>
+                    <legend>Customer Info</legend>
+                    <label ><span lang="en-ca">First Name</span>:</label><input name="txtFirstName" required="required" size="25" tabindex="1" />
+                    <label>Last Name:</label><input name="txtLastName" required="required" size="25" tabindex="3" /><br>
+                   <label >Phone Number:</label><input name="txtPhotoNumber" required="required" size="25" tabindex="5" /><br>
+                   <label>Email:</label><input name="txtEmail" size="30" tabindex="7" type="email"required="required" placeholder="someone@someplace.ca"><br>
+                   <label ><input name="btnSubmit" tabindex="9" type="submit" value="Submit"></label>
+                </fieldset>
+                </form>
+</div>
+
+  
+<%- include ('partials/bottom_nav.ejs') %>  
+
+<%- include ('partials/footer.ejs') %>

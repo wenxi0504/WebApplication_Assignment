@@ -1,0 +1,51 @@
+/* custom css */
+/* File name:COM229-M2021-Assignment1-portfolio site
+Student’s Name: Wen Xu
+ StudentID: 301098127
+  Date:2021-05-30   
+   */
+
+body {background-image:url("/Assets/images/background3.jpg")}
+/*
+Full Name:Wen Xu
+ Student ID:301098127 
+ Course Code:COMP229
+ Course Name: Web Application development
+ Assignment:Assignment1 for COMP229 - portfolio site
+ last modification: 3rd, June
+ version:1.0.0
+*/
+#idPhoto {
+    float:right;margin-left:8px;margin-bottom:6px
+  }
+
+  .table{
+    width: 100%;
+    border-left-width: 0px;
+	  border-top-width: 0px;
+	  border-bottom-width: 0px;
+  }
+
+  .tabledata{
+    border-style:solid;
+	  border-width: 2px;
+  }
+
+  .project{
+    width: 600px;;
+    height: 350px;;
+    border-width: 0px;
+  }
+ 
+  .h2title {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #0b0f66;
+  }
+  .h2content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: justify;
+  }
+.navbar-brand{ text-decoration-color:grey}
+
+

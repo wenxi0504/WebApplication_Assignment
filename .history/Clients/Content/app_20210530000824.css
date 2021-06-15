@@ -1,0 +1,40 @@
+/* custom css */
+body {background-image:url('client/Assets/images/background3.jpg')}
+
+#idPhoto {
+    float:right;margin-left:8px;margin-bottom:6px
+  }
+
+  .table{
+    width: 100%;
+    border-left-width: 0px;
+	  border-top-width: 0px;
+	  border-bottom-width: 0px;
+  }
+
+  .tabledata{
+    border-style:solid;
+	  border-width: 2px;
+  }
+
+  .project{
+    width: 600px;;
+    height: 350px;;
+    border-width: 0px;
+  }
+ 
+  .h2title {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #0b0f66;
+  }
+  .h2content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: justify;
+  }
+
+
+
+
+
+
