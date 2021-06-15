@@ -4,10 +4,9 @@ const Schema = mongoose.Schema; // Schema alias
 
 const Contacts_listSchema = new Schema
 ({
-    ContactName : String,
-    ContactNumber: String,
-    EmailAddress:String,
-    
+    Contact Name : String,
+    Contact Number: Number,
+    Email Address:String
     
     
 },
