@@ -22,7 +22,7 @@ function DisplayEditPage(req, res, next) {
             console.error(err);
             res.end(err);
         }
-        res.render('update', { title: 'Edit', page: 'update', contact: contactItemToEdit });
+        res.render('contacts_list', { title: 'Edit', page: 'update', contact: contactItemToEdit });
     });
 }
 exports.DisplayEditPage = DisplayEditPage;
@@ -43,7 +43,7 @@ function ProcessEditPage(req, res, next) {
             console.error(err);
             res.end(err);
         }
-        res.redirect('/edit/:id');
+        res.redirect('/contacts_list');
     });
 }
 exports.ProcessEditPage = ProcessEditPage;

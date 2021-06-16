@@ -2,7 +2,7 @@
 <%- include ('partials/main_nav.ejs') %>
 
 <div class="row justify-content-lg-center g-3">
-    <h1> Contacts List</h1>
+    <h1><%= title %> Contacts List</h1>
 
     <form method="POST" class="col-lg-6 col-md-10 col-sm-10">
         <div class="input-group mb-3">
@@ -21,6 +21,12 @@
             <span class="input-group-text" id="inputGroup-name">Email Address</span>
             <input type="text" class="form-control" placeholder="Enter Email Address" aria-label="Email Address" aria-describedby="Email Address"
             name="EmailAddress" value="<%= contact.EmailAddress %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">Colour</span>
+            <input type="text" class="form-control" placeholder="Enter Clothing Name" aria-label="Clothing Colour" aria-describedby="Clothing Colour"
+            name="colour" value="<%= clothing.colour %>" required>
         </div>
 
         

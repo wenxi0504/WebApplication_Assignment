@@ -40,10 +40,9 @@ export function DisplayEditPage(req: Request, res: Response, next: NextFunction)
         }
 
         // show the edit view
-        res.render('update', { title: 'Edit', page: 'update', contact: contactItemToEdit  });
-    });   
-    
-  }
+        res.render('/edit/:id', { title: 'Edit', page: 'update', contact: contactItemToEdit  });
+    });
+}
 
 // Display (C)reate page
 export function DisplayAddPage(req: Request, res: Response, next: NextFunction): void
@@ -77,7 +76,7 @@ export function ProcessEditPage(req: Request, res: Response, next: NextFunction)
         res.end(err);
       }
   
-      res.redirect('/edit/:id');
+      res.redirect('/contacts_list');
     });
 }
 
@@ -122,4 +121,3 @@ export function ProcessDeletePage(req: Request, res: Response, next: NextFunctio
   });
   
 }
-

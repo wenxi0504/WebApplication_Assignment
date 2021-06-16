@@ -40,7 +40,7 @@ export function DisplayEditPage(req: Request, res: Response, next: NextFunction)
         }
 
         // show the edit view
-        res.render('update', { title: 'Edit', page: 'update', contact: contactItemToEdit  });
+        res.render('/edit/:id', { title: 'Edit', page: 'update', contact: contactItemToEdit  });
     });   
     
   }

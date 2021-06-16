@@ -22,7 +22,7 @@ function DisplayEditPage(req, res, next) {
             console.error(err);
             res.end(err);
         }
-        res.render('update', { title: 'Edit', page: 'update', contact: contactItemToEdit });
+        res.render('edit/:id', { title: 'Edit', page: 'update', contact: contactItemToEdit });
     });
 }
 exports.DisplayEditPage = DisplayEditPage;
