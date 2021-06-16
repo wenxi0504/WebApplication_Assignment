@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const router = express_1.default.Router();
 exports.default = router;
-const index_1 = require("../Server/Controllers/index");
+const index_1 = require("../Controllers/index");
 router.get('/', index_1.DisplayHomePage);
 router.get('/home', index_1.DisplayHomePage);
 router.get('/about', index_1.DisplayAboutPage);

@@ -6,9 +6,9 @@ import logger from 'morgan';
 import  Mongoose from 'mongoose';
 
 // attach router file
-import indexRouter from '../routes/index';
+import indexRouter from '../../routes/index';
 // a link to contact router
-import contactRouter from '../routes/contacts_list';
+import contactRouter from '../../routes/contacts_list';
 
 // app configuration
 const app = express();

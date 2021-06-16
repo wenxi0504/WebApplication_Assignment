@@ -5,10 +5,8 @@ import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import  Mongoose from 'mongoose';
 
-// attach router file
-import indexRouter from '../routes/index';
-// a link to contact router
-import contactRouter from '../routes/contacts_list';
+import indexRouter from '../../routes/index';
+import contactRouter from '../../routes/contacts_list';
 
 // app configuration
 const app = express();
@@ -42,7 +40,6 @@ app.use(express.static(path.join(__dirname, "../../node_modules")));
 
 //rounting happens
 app.use('/', indexRouter);
-//contacts_list is the new area of website
 app.use('/contacts_list', contactRouter);
 
 // catch 404 and forward to error handler
