@@ -1,0 +1,33 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+<div class="row justify-content-lg-center g-3">
+    <h1>contacts_list </h1>
+
+    <form method="POST" class="col-lg-6 col-md-10 col-sm-10">
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="name">Contact Name</span>
+            <input id="name" type="text" class="form-control" placeholder="ContactName" aria-label="ContactName" aria-describedby="Item ContactName"
+            name="name" value="<%= item.ContactName %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="name">Contact Number</span>
+            <input id="brand" type="text" class="form-control" placeholder="ContactNumber" aria-label="ContactNumber" aria-describedby="Item ContactNumber"
+            name="brand" value="<%= item.ContactNumber %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="name">Email Address</span>
+            <input id="category" type="text" class="form-control" placeholder="EmailAddress" aria-label="EmailAddress" aria-describedby="Item EmailAddress"
+            name="category" value="<%= item.EmailAddress %>" required>
+        </div>
+       
+
+        <button type="submit" class="btn btn-primary" id="editButton"><i class="fas fa-edit fa-lg"></i> Edit</button>
+        
+    </form>
+</div>
+
+<%- include ('partials/bottom_nav.ejs') %>  
+<%- include ('partials/footer.ejs') %>

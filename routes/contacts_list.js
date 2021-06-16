@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const router = express_1.default.Router();
 exports.default = router;
-const contacts_list_1 = require("../Controllers/contacts_list");
+const contacts_list_1 = require("../Server/Controllers/contacts_list");
 router.get('/', contacts_list_1.DisplayContacts_ListPage);
 router.get('/add', contacts_list_1.DisplayAddPage);
 router.get('/edit/:id', contacts_list_1.DisplayEditPage);

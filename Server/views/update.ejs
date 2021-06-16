@@ -1,0 +1,58 @@
+<%- include ('partials/header.ejs') %>
+
+<%- include ('partials/main_nav.ejs') %>
+
+<div class="row justify-content-lg-center g-3">
+    <h1><%= title %> Clothing Item</h1>
+
+    <form method="POST" class="col-lg-6 col-md-10 col-sm-10">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">Name</span>
+            <input type="text" class="form-control" placeholder="Enter Clothing Name" aria-label="Clothing Name" aria-describedby="Clothing Name"
+            name="name" value="<%= clothing.name %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">Brand</span>
+            <input type="text" class="form-control" placeholder="Enter Clothing Name" aria-label="Clothing Brand" aria-describedby="Clothing Brand"
+            name="brand" value="<%= clothing.brand %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">Category</span>
+            <input type="text" class="form-control" placeholder="Enter Clothing Category" aria-label="Clothing Category" aria-describedby="Clothing Category"
+            name="category" value="<%= clothing.category %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">Colour</span>
+            <input type="text" class="form-control" placeholder="Enter Clothing Name" aria-label="Clothing Colour" aria-describedby="Clothing Colour"
+            name="colour" value="<%= clothing.colour %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">Size</span>
+            <input type="text" class="form-control" placeholder="Enter Clothing Size" aria-label="Clothing Size" aria-describedby="Clothing Size"
+            name="size" value="<%= clothing.size %>" required>
+        </div>
+            
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">Price</span>
+            <input type="text" class="form-control" placeholder="Enter Clothing Name" aria-label="Clothing Price" aria-describedby="Clothing Price"
+            name="price" value="<%= clothing.price %>" required>
+        </div>
+
+            <% if(title == "Edit") { %>
+                <button type="submit" id="editButton" class="btn btn-primary"><i class="fas fa-edit fa-lg"></i> Edit</button>
+            <% } else { %>
+                <button type="submit" id="addButton" class="btn btn-primary"><i class="fas fa-plus-circle fa-lg"></i> Add</button>
+            <% } %>  
+            
+            <a href="/clothing-list" id="cancelButton" type="button" class="btn btn-warning"><i class="fas fa-undo"></i> Cancel</a>
+        </div>
+    </form>
+</div>
+
+<%- include ('partials/bottom_nav.ejs') %>  
+
+<%- include ('partials/footer.ejs') %>
