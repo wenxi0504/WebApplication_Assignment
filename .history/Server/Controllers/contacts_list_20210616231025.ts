@@ -20,7 +20,7 @@ export function  DisplayContacts_ListPage(req: Request, res: Response, next: Nex
             res.end(err);
         }
         
-        res.render('contacts_list', { title: 'contacts_list', page: 'contacts_list', contact: contactCollection, displayName: UserDisplayName(req)  });
+        res.render('contacts_list', { title: 'contacts_list', page: 'contacts_list', contact: contactCollection  });
     });
 }
 
@@ -40,7 +40,7 @@ export function DisplayEditPage(req: Request, res: Response, next: NextFunction)
         }
 
         // show the edit view
-        res.render('update', { title: 'Edit', page: 'update', contact: contactItemToEdit, displayName: UserDisplayName(req)  });
+        res.render('update', { title: 'Edit', page: 'update', contact: contactItemToEdit  });
     });   
     
   }
@@ -50,7 +50,7 @@ export function DisplayAddPage(req: Request, res: Response, next: NextFunction):
 {
     // show the edit view
     //res.render('update', { title: 'Add', page: 'update', contact: '' });
-    res.render('update',{title:'Add', page:'update',contact: '', displayName: UserDisplayName(req)});
+    res.render('update',{title:'Add', page:'update',contact: ''});
 }
 
 

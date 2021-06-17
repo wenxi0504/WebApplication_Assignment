@@ -13,34 +13,34 @@ import { UserDisplayName } from '../Util';
 
 export function DisplayHomePage(req: Request, res: Response, next: NextFunction): void
 {
-    res.render('home', { title: 'Home', page: 'home',displayName: UserDisplayName(req)});
+    res.render('home', { title: 'Home', page: 'home' });
 }
 
 export function DisplayAboutPage(req: Request, res: Response, next: NextFunction): void
 {
-    res.render('aboutme', { title: 'About Me', page: 'about me', displayName: UserDisplayName(req)});
+    res.render('aboutme', { title: 'About Me', page: 'about me'  });
 }
 
 export function DisplayProjectsPage(req: Request, res: Response, next: NextFunction): void
 {
-    res.render('projects', { title: 'Projects', page: 'projects', displayName: UserDisplayName(req)});
+    res.render('projects', { title: 'Projects', page: 'projects'  });
 }
 
 export function DisplayServicesPage(req: Request, res: Response, next: NextFunction): void
 {
-    res.render('services', { title: 'Services', page: 'services', displayName: UserDisplayName(req)});
+    res.render('services', { title: 'Services', page: 'services'  });
 }
 
 export function DisplayContactPage(req: Request, res: Response, next: NextFunction): void
 {
-    res.render('contact', { title: 'Contact', page: 'contact', displayName: UserDisplayName(req)});
+    res.render('contact', { title: 'Contact', page: 'contact'  });
 }
 
 export function DisplayLoginPage(req: Request, res: Response, next: NextFunction): void
 {
     if(!req.user)
     {
-        return res.render('login', { title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req) });
+        return res.render('login', { title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req)  });
     }
 
     return res.redirect('/contacts_list');
@@ -82,10 +82,10 @@ export function DisplayRegisterPage(req: Request, res: Response, next: NextFunct
 {
     if(!req.user)
     {
-        return res.render('register', { title: 'Register', page: 'register', messages: req.flash('registerMessage'), displayName: UserDisplayName(req)});
+        return res.render('register', { title: 'Register', page: 'register', messages: req.flash('registerMessage'), displayName: UserDisplayName(req)  });
     }
 
-    return res.redirect('/contacts_list');
+    return res.redirect('/login');
 }
 
 export function ProcessRegisterPage(req: Request, res: Response, next: NextFunction): void
