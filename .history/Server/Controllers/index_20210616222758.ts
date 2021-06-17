@@ -82,7 +82,7 @@ export function DisplayRegisterPage(req: Request, res: Response, next: NextFunct
 {
     if(!req.user)
     {
-        return res.render('register', { title: 'Register', page: 'register', messages: req.flash('registerMessage'), displayName: UserDisplayName(req)  });
+        return res.render('/register', { title: 'Register', page: 'register', messages: req.flash('registerMessage'), displayName: UserDisplayName(req)  });
     }
 
     return res.redirect('/contacts_list');

@@ -7,7 +7,7 @@ import passport from 'passport';
 import User from '../Models/user';
 
 // import Util functions
-import { UserDisplayName } from '../Util';
+//import { UserDisplayName } from '../Util';
 
 // Display Functions
 
@@ -40,7 +40,7 @@ export function DisplayLoginPage(req: Request, res: Response, next: NextFunction
 {
     if(!req.user)
     {
-        return res.render('login', { title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req)  });
+        return res.render('/login', { title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req)  });
     }
 
     return res.redirect('/contacts_list');
@@ -82,7 +82,7 @@ export function DisplayRegisterPage(req: Request, res: Response, next: NextFunct
 {
     if(!req.user)
     {
-        return res.render('register', { title: 'Register', page: 'register', messages: req.flash('registerMessage'), displayName: UserDisplayName(req)  });
+        return res.render('/register', { title: 'Register', page: 'register', messages: req.flash('registerMessage'), displayName: UserDisplayName(req)  });
     }
 
     return res.redirect('/contacts_list');

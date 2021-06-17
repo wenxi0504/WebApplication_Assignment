@@ -9,7 +9,7 @@ import {DisplayHomePage, DisplayAboutPage, DisplayProjectsPage, DisplayServicesP
 router.get('/', DisplayHomePage);
 
 /* GET home page. */
-router.get('/home', DisplayHomePage)
+router.get('/home', DisplayHomePage);
 
 /* GET about page. */
 router.get('/about', DisplayAboutPage);

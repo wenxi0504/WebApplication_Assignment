@@ -1,7 +1,7 @@
   
 import express, { Request, Response, NextFunction } from 'express';
 
-import passport from 'passport';
+mport passport from 'passport';
 
 // create an instance of the User model
 import User from '../Models/user';
@@ -40,7 +40,7 @@ export function DisplayLoginPage(req: Request, res: Response, next: NextFunction
 {
     if(!req.user)
     {
-        return res.render('login', { title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req)  });
+        return res.render('index', { title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req)  });
     }
 
     return res.redirect('/contacts_list');
@@ -82,7 +82,7 @@ export function DisplayRegisterPage(req: Request, res: Response, next: NextFunct
 {
     if(!req.user)
     {
-        return res.render('register', { title: 'Register', page: 'register', messages: req.flash('registerMessage'), displayName: UserDisplayName(req)  });
+        return res.render('/register', { title: 'Register', page: 'register', messages: req.flash('registerMessage'), displayName: UserDisplayName(req)  });
     }
 
     return res.redirect('/contacts_list');
