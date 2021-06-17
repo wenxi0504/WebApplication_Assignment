@@ -1,0 +1,41 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<div class="row justify-content-lg-center g-3">
+    <h1> Contacts List</h1>
+
+    <form method="POST" class="col-lg-6 col-md-10 col-sm-10">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">Contact Name</span>
+            <input type="text" class="form-control" placeholder="Enter Contact Name" aria-label="Contact Name" aria-describedby="Contact Name"
+            name="ContactName" value="<%= contact.ContactName %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">Contact Number</span>
+            <input type="text" class="form-control" placeholder="Enter Contact Number" aria-label="Contact Number" aria-describedby="Contact Number"
+            name="ContactNumber" value="<%= contact.ContactNumber %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">Email Address</span>
+            <input type="text" class="form-control" placeholder="Enter Email Address" aria-label="Email Address" aria-describedby="Email Address"
+            name="EmailAddress" value="<%= contact.EmailAddress %>" required>
+        </div>
+        
+        <div>
+        <button type="submit" id="editButton" class="btn btn-primary"><i class="fas fa-edit fa-lg"></i>Update</button>
+        <!--<a href="/contacts_list/edit/<%= contact._id %>" button type="button" id="deleteButton" class="btn btn-danger btn-sm delete"><i class="fas fa-edit fa-lg"></i></i> Delete</a> -->
+        <a href="/contacts_list" button type="button" id="deleteButton" class="btn btn-danger btn-sm delete"><i class="fas fa-edit fa-lg"></i></i> Delete</a>
+        <a href="/contacts_list" id="cancelButton" type="button" class="btn btn-warning"><i class="fas fa-undo"></i> Cancel</a>
+        </div>
+
+
+
+
+    </form>
+</div>
+
+<%- include ('partials/bottom_nav.ejs') %>  
+
+<%- include ('partials/footer.ejs') %>

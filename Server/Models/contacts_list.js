@@ -8,7 +8,7 @@ const Schema = mongoose_1.default.Schema;
 const contactSchema = new Schema({
     ContactName: String,
     ContactNumber: String,
-    EmailAddress: String,
+    EmailAddress: String
 }, {
     collection: "contact"
 });

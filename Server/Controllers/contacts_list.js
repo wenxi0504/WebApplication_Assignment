@@ -27,7 +27,7 @@ function DisplayEditPage(req, res, next) {
 }
 exports.DisplayEditPage = DisplayEditPage;
 function DisplayAddPage(req, res, next) {
-    res.render('contacts_list', { title: 'Add', page: 'update', contact: '' });
+    res.render('update', { title: 'Add', page: 'update', contact: '' });
 }
 exports.DisplayAddPage = DisplayAddPage;
 function ProcessEditPage(req, res, next) {
@@ -43,7 +43,7 @@ function ProcessEditPage(req, res, next) {
             console.error(err);
             res.end(err);
         }
-        res.redirect('/edit/:id');
+        res.redirect('/contacts_list');
     });
 }
 exports.ProcessEditPage = ProcessEditPage;
@@ -69,7 +69,7 @@ function ProcessDeletePage(req, res, next) {
             console.error(err);
             res.end(err);
         }
-        res.redirect('/contacts_list');
+        res.redirect('./contacts_list');
     });
 }
 exports.ProcessDeletePage = ProcessDeletePage;
