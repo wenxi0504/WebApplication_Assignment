@@ -1,10 +1,8 @@
-<!--Insert header and main navigation-->
-
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/main_nav.ejs') %>
 
 <div class="row justify-content-lg-center g-3">
-    <h1> Contacts List</h1>
+    <h1> Contacts List for <%= contact._id %></h1>
 
     <form method="POST" class="col-lg-6 col-md-10 col-sm-10">
 
@@ -28,11 +26,10 @@
         </div>
         
         <div>
-        <!--click submit button to edit the user data then parse the updated value back to the contacts_list page -->
         <button type="submit" id="editButton" class="btn btn-primary"><i class="fas fa-edit fa-lg"></i>Update</button>
-        <!--click delete button to delete the user data then redirect back to the contacts_list page -->
-        <a href="/contacts_list/delete/<%= contact._id %>" button type="button" id="deleteButton" class="btn btn-danger btn-sm delete"><i class="fas fa-edit fa-2x"></i></i> Delete</a>
-        <!--click cancel button to redirect back to the contacts_list page -->
+        <!--<a href="/contacts_list/edit/<%= contact._id %>" button type="button" id="deleteButton" class="btn btn-danger btn-sm delete"><i class="fas fa-edit fa-lg"></i></i> Delete</a> -->
+        <!--<a href="/contacts_list/edit/<%= contact._id %>" button type="button" id="deleteButton" class="btn btn-danger btn-sm delete"><i class="fas fa-edit fa-lg"></i></i> Delete</a> -->
+        <a href="/contacts_list/delete/<%= contact._id %>" button type="button" id="deleteButton" class="btn btn-danger btn-sm delete"><i class="fas fa-edit fa-lg"></i></i> Delete</a>
         <a href="/contacts_list" id="cancelButton" type="button" class="btn btn-warning"><i class="fas fa-undo"></i> Cancel</a>
         </div>
 

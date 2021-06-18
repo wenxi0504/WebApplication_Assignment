@@ -24,6 +24,7 @@ router.post('/add',AuthGuard,ProcessAddPage);
 router.post('/edit/:id',AuthGuard, ProcessEditPage);
 
 /* GET - process /contacts_list/delete/:id */
-router.get('/delete/:id',AuthGuard, ProcessDeletePage);
+//router.get('/delete/:id',AuthGuard, ProcessDeletePage);
 
-//router.post('/delete/:id',AuthGuard, ProcessDeletePage);
+/* POST - process /contacts_list/edit/:id page */
+router.post('/delete/:id',AuthGuard, ProcessDeletePage);

@@ -70,7 +70,7 @@ function ProcessDeletePage(req, res, next) {
             console.error(err);
             res.end(err);
         }
-        res.redirect('./contacts_list');
+        res.redirect('/contacts_list');
     });
 }
 exports.ProcessDeletePage = ProcessDeletePage;

@@ -5,7 +5,6 @@
 
 <h1>Welcome to contacts_list</h1>
 
-<!-- Row Template -->  
 <div class="row">
     <div class="col">
         <% if(displayName) { %>
@@ -37,11 +36,11 @@
                     <td><%= contact[count].ContactName %></td>
                     <td><%= contact[count].ContactNumber %></td>
                     <td><%= contact[count].EmailAddress %></td>
-                    
+                   
                     <% if(displayName) { %>
                     <td class="text-center"><a href="/contacts_list/edit/<%= contact[count]._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-user-edit"></i></i> Update</a></td>
-                    <td class="text-center"><a href="/contacts_list/delete/<%= contact[count]._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash"></i></i> Delete</a></td>
-                     <% } %>
+                <td class="text-center"><a href="/contacts_list/delete/<%= contact[count]._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash"></i></i> Delete</a></td>
+                  <% } %>
                 </tr>
               <% } %>
 
