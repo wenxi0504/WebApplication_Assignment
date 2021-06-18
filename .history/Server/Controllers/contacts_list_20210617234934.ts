@@ -11,7 +11,7 @@ import { UserDisplayName} from '../Util';
 //(R)ead in CRUD
 export function  DisplayContacts_ListPage(req: Request, res: Response, next: NextFunction): void
 {
-    // db.contact.find() will parse the data to the contacts_list web page
+    // db.contact.find()
     contact.find((err, contactCollection) =>
     {
         if(err)

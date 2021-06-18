@@ -6,7 +6,7 @@ Full Name:Wen Xu
  Course Code:COMP229
  Course Name: Web Application development
  Assignment:Assignment2 for COMP229 
- last modification: 18th, June
+ last modification: 3rd, June
  version:1.0.0
 */
 "use strict";
